@@ -57,11 +57,15 @@ var valeurAbsolue = function (nombre) {
     return Math.abs(nombre);
 }
 var valeurAbsolueArray = function (array) {
-    var tableau = [];
-    for(var value of array)
-    {
-        tableau.push(Math.abs(value))
-    }
+    // PREMIERE SOLUTION :
+    // var tableau = [];
+    // for(var value of array)
+    // {
+    //     tableau.push(Math.abs(value))
+    // }
+    // return tableau;
+    // SECONDE SOLUTION :
+    tableau = array.map(x => Math.abs(x));
     return tableau;
 }
 var sufaceCercle = function (rayon) {
